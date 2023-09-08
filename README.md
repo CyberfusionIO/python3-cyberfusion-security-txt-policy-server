@@ -45,7 +45,6 @@ Properties:
 * `encryption_key_urls`
 * `acknowledgment_urls`
 * `preferred_languages`
-* `canonical_urls`
 * `policy_urls`
 * `opening_urls`
 
@@ -76,4 +75,3 @@ DATABASE_PATH=security-txt-policy-server.json pytest tests/
 ```
 
 The tests must be run from the project root.
-
