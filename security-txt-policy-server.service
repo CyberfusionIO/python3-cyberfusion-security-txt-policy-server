@@ -1,0 +1,21 @@
+# Drop this file into /etc/systemd/system/security-txt-policy-server.service
+#
+# This example configuration assumes that a user called 'security-txt-policy-server' exists,
+# and that you have installed Security TXT Policy Server in a venv at /opt/security-txt-policy-server
+
+[Unit]
+Description=Security TXT Policy Server
+After=network.target
+
+[Service]
+User=security-txt-policy-server
+Group=security-txt-policy-server
+WorkingDirectory=/opt/security-txt-policy-server
+ExecStart=/opt/security-txt-policy-server/bin/security-txt-policy-server
+PrivateTmp=true
+KillMode=mixed
+
+Environment=DATABASE_PATH=/var/lib/security-txt-policy-server.json
+
+[Install]
+WantedBy=multi-user.target

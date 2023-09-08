@@ -1,0 +1,262 @@
+{
+  "security_txt_policies": [
+    {
+      "domains": [
+        "invalid-email-contact.com"
+      ],
+      "url_contacts": [
+        "https://example.com/contact.html"
+      ],
+      "email_contacts": [
+        "invalid"
+      ],
+      "expires_timestamp": 1694194473,
+      "encryption_key_urls": [
+        "https://example.com/contact.pgp"
+      ],
+      "acknowledgment_urls": [
+        "https://example.com/thanks.txt"
+      ],
+      "preferred_languages": [
+        "en",
+        "nl"
+      ],
+      "policy_urls": [
+        "https://example.com/security.html"
+      ],
+      "opening_urls": [
+        "https://example.com/jobs.html"
+      ]
+    },
+    {
+      "domains": [
+        "invalid-url-contact.com"
+      ],
+      "url_contacts": [
+        "invalid"
+      ],
+      "email_contacts": [
+        "foo@example.com"
+      ],
+      "expires_timestamp": 1694194473,
+      "encryption_key_urls": [
+        "https://example.com/contact.pgp"
+      ],
+      "acknowledgment_urls": [
+        "https://example.com/thanks.txt"
+      ],
+      "preferred_languages": [
+        "en",
+        "nl"
+      ],
+      "policy_urls": [
+        "https://example.com/security.html"
+      ],
+      "opening_urls": [
+        "https://example.com/jobs.html"
+      ]
+    },
+    {
+      "domains": [
+        "invalid-opening-url.com"
+      ],
+      "url_contacts": [
+        "https://example.com/contact.html"
+      ],
+      "email_contacts": [
+        "foo@example.com"
+      ],
+      "expires_timestamp": 1694194473,
+      "encryption_key_urls": [
+        "https://example.com/contact.pgp"
+      ],
+      "acknowledgment_urls": [
+        "https://example.com/thanks.txt"
+      ],
+      "preferred_languages": [
+        "en",
+        "nl"
+      ],
+      "policy_urls": [
+        "https://example.com/security.html"
+      ],
+      "opening_urls": [
+        "invalid"
+      ]
+    },
+    {
+      "domains": [
+        "invalid-encryption-key-url.com"
+      ],
+      "url_contacts": [
+        "https://example.com/contact.html"
+      ],
+      "email_contacts": [
+        "foo@example.com"
+      ],
+      "expires_timestamp": 1694194473,
+      "encryption_key_urls": [
+        "invalid"
+      ],
+      "acknowledgment_urls": [
+        "https://example.com/thanks.txt"
+      ],
+      "preferred_languages": [
+        "en",
+        "nl"
+      ],
+      "policy_urls": [
+        "https://example.com/security.html"
+      ],
+      "opening_urls": [
+        "https://example.com/jobs.html"
+      ]
+    },
+    {
+      "domains": [
+        "invalid-acknowledgment-url.com"
+      ],
+      "url_contacts": [
+        "https://example.com/contact.html"
+      ],
+      "email_contacts": [
+        "foo@example.com"
+      ],
+      "expires_timestamp": 1694194473,
+      "encryption_key_urls": [
+        "https://example.com/contact.pgp"
+      ],
+      "acknowledgment_urls": [
+        "invalid"
+      ],
+      "preferred_languages": [
+        "en",
+        "nl"
+      ],
+      "policy_urls": [
+        "https://example.com/security.html"
+      ],
+      "opening_urls": [
+        "https://example.com/jobs.html"
+      ]
+    },
+    {
+      "domains": [
+        "invalid-policy-url.com"
+      ],
+      "url_contacts": [
+        "https://example.com/contact.html"
+      ],
+      "email_contacts": [
+        "foo@example.com"
+      ],
+      "expires_timestamp": 1694194473,
+      "encryption_key_urls": [
+        "https://example.com/contact.pgp"
+      ],
+      "acknowledgment_urls": [
+        "https://example.com/thanks.txt"
+      ],
+      "preferred_languages": [
+        "en",
+        "nl"
+      ],
+      "policy_urls": [
+        "invalid"
+      ],
+      "opening_urls": [
+        "https://example.com/jobs.html"
+      ]
+    },
+    {
+      "domains": [
+        "UppErCasEUrL.com"
+      ],
+      "url_contacts": [
+        "https://example.com/contact.html"
+      ],
+      "email_contacts": [
+        "foo@example.com"
+      ],
+      "expires_timestamp": 1694194473,
+      "encryption_key_urls": [
+        "https://example.com/contact.pgp"
+      ],
+      "acknowledgment_urls": [
+        "https://example.com/thanks.txt"
+      ],
+      "preferred_languages": [
+        "en",
+        "nl"
+      ],
+      "policy_urls": [
+        "https://example.com/security.html"
+      ],
+      "opening_urls": [
+        "https://example.com/jobs.html"
+      ]
+    },
+    {
+      "domains": [
+        "*.wildcard.com"
+      ],
+      "url_contacts": [
+        "https://example.com/contact.html"
+      ],
+      "email_contacts": [
+        "foo@example.com"
+      ],
+      "expires_timestamp": 1694194473,
+      "encryption_key_urls": [
+        "https://example.com/contact.pgp"
+      ],
+      "acknowledgment_urls": [
+        "https://example.com/thanks.txt"
+      ],
+      "preferred_languages": [
+        "en",
+        "nl"
+      ],
+      "policy_urls": [
+        "https://example.com/security.html"
+      ],
+      "opening_urls": [
+        "https://example.com/jobs.html"
+      ]
+    },
+    {
+      "domains": [
+        "use-for-other-tests.com"
+      ],
+      "url_contacts": [
+        "https://example.com/contact1.html",
+        "https://example.com/contact2.html"
+      ],
+      "email_contacts": [
+        "foo@example.com",
+        "bar@example.com"
+      ],
+      "expires_timestamp": 1694194473,
+      "encryption_key_urls": [
+        "https://example.com/contact1.pgp",
+        "https://example.com/contact2.pgp"
+      ],
+      "acknowledgment_urls": [
+        "https://example.com/thanks1.txt",
+        "https://example.com/thanks2.txt"
+      ],
+      "preferred_languages": [
+        "en",
+        "nl"
+      ],
+      "policy_urls": [
+        "https://example.com/security1.html",
+        "https://example.com/security2.html"
+      ],
+      "opening_urls": [
+        "https://example.com/jobs1.html",
+        "https://example.com/jobs2.html"
+      ]
+    }
+  ]
+}
