@@ -59,7 +59,7 @@ class SecurityTXTPolicy:
         for opening_url in self.opening_urls:
             lines.append(f"Hiring: {opening_url}")
 
-        return "\n".join(lines)
+        return "\n".join(lines) + "\n"
 
 
 def get_domain_is_wildcard(domain: str) -> bool:

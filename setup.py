@@ -7,7 +7,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="security_txt_policy_server",
-    version="1.0",
+    version="1.0.1",
     description="Security TXT Policy Server serves `.well-known/security.txt` files.",
     long_description=long_description,
     long_description_content_type="text/markdown",
