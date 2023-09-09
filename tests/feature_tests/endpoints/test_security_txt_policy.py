@@ -105,7 +105,7 @@ def test_security_txt_policy_expires(test_client: TestClient) -> None:
         "/.well-known/security.txt",
         headers={"Host": "use-for-other-tests.com"},
     )
-    assert "Expires: 2023-09-08T17:34:33" in response.text.splitlines()
+    assert "Expires: 2023-09-08T17:34:33.000Z" in response.text.splitlines()
 
 
 def test_security_txt_policy_encryption_key_urls(

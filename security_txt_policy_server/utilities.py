@@ -1,7 +1,7 @@
 """Generic HTTP and URL utilities."""
 
+import datetime
 from dataclasses import dataclass
-from datetime import datetime
 from typing import List, Optional
 
 import validators
@@ -40,7 +40,7 @@ class SecurityTXTPolicy:
             lines.append(f"Contact: mailto:{email_contact}")
 
         lines.append(
-            f"Expires: {datetime.utcfromtimestamp(self.expires_timestamp).isoformat()}"
+            f"Expires: {datetime.datetime.fromtimestamp(self.expires_timestamp, tz=datetime.timezone.utc).isoformat(timespec='milliseconds').replace('+00:00', 'Z')}"
         )
 
         for encryption_key_url in self.encryption_key_urls:
