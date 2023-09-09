@@ -14,7 +14,7 @@ setup(
     python_requires=">=3.6",
     author="William Edwards",
     author_email="support@cyberfusion.nl",
-    url="https://github.com/CyberfusionIO/SecurityTXTPolicyServer",
+    url="https://github.com/CyberfusionIO/Security-TXT-Policy-Server",
     platforms=["linux"],
     packages=find_packages(
         include=[
