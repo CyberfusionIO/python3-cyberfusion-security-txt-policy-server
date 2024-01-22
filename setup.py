@@ -29,7 +29,7 @@ setup(
         ]
     },
     install_requires=[
-        "starlette==0.35.1",
+        "starlette==0.36.0",
         "uvicorn==0.27.0",
         "validators==0.22.0",
     ],
