@@ -24,13 +24,31 @@ pip3 install security-txt-policy-server
 
 ## App
 
-Find an example config in `.env.example`.
+The following environment variables may be specified:
 
-Add settings to the `.env` file. This file is relative to your working directory.
+```
+; The app name is used in several places for this app to identify itself (string)
+; Default: security-txt-policy-server
+APP_NAME=
+
+; The server will bind to this host (string)
+; Default: ::1
+LISTEN_HOST=
+
+; The server will listen to this port (integer)
+; Default: 8080
+LISTEN_PORT=
+
+; IP addresses of proxies that are trusted with proxy headers (comma separated list of strings)
+; Default: ::1
+TRUSTED_PROXY_ADDRESSES=
+
+; The path to your JSON database (string)
+; Default: none
+DATABASE_PATH=
+```
 
 Only `DATABASE_PATH` is required to be set. We recommend setting it to `/var/lib/security-txt-policy-server.json`.
-
-These settings can be overridden by specifying them as environment variables.
 
 ## JSON Database
 
