@@ -1,6 +1,6 @@
-# Security TXT Policy Server
+# security-txt-policy-server
 
-Security TXT Policy Server serves `.well-known/security.txt` files.
+security-txt-policy-server serves `.well-known/security.txt` files.
 
 # Install
 
@@ -72,7 +72,7 @@ Find information about these properties on https://securitytxt.org/.
 
 ## Start
 
-Start Security TXT Policy Server manually with:
+Start security-txt-policy-server manually with:
 
 ```
 bin/security-txt-policy-server
