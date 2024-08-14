@@ -8,13 +8,13 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setup(
     name="security_txt_policy_server",
     version="1.0.2",
-    description="Security TXT Policy Server serves `.well-known/security.txt` files.",
+    description="security-txt-policy-server serves `.well-known/security.txt` files.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     python_requires=">=3.6",
     author="William Edwards",
     author_email="support@cyberfusion.nl",
-    url="https://github.com/CyberfusionIO/Security-TXT-Policy-Server",
+    url="https://github.com/CyberfusionIO/security-txt-policy-server",
     platforms=["linux"],
     packages=find_packages(
         include=[

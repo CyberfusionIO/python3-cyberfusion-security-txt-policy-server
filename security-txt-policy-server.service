@@ -1,10 +1,10 @@
 # Drop this file into /etc/systemd/system/security-txt-policy-server.service
 #
 # This example configuration assumes that a user called 'security-txt-policy-server' exists,
-# and that you have installed Security TXT Policy Server in a venv at /opt/security-txt-policy-server
+# and that you have installed security-txt-policy-server in a venv at /opt/security-txt-policy-server
 
 [Unit]
-Description=Security TXT Policy Server
+Description=security-txt-policy-server
 After=network.target
 
 [Service]
