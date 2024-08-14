@@ -28,8 +28,8 @@ setup(
         ]
     },
     install_requires=[
-        "starlette==0.36.1",
-        "uvicorn==0.30.5",
-        "validators==0.22.0",
+        "starlette==0.38.2",
+        "uvicorn==0.30.6",
+        "validators==0.33.0",
     ],
 )
