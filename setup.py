@@ -11,9 +11,8 @@ setup(
     description="security-txt-policy-server serves `.well-known/security.txt` files.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    python_requires=">=3.6",
-    author="William Edwards",
-    author_email="support@cyberfusion.nl",
+    author="Cyberfusion",
+    author_email="support@cyberfusion.io",
     url="https://github.com/CyberfusionIO/security-txt-policy-server",
     platforms=["linux"],
     packages=find_packages(
@@ -33,11 +32,4 @@ setup(
         "uvicorn==0.30.5",
         "validators==0.22.0",
     ],
-    classifiers=[
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
-    ],
-    keywords=["cyberfusion", "starlette"],
-    license="MIT",
 )
