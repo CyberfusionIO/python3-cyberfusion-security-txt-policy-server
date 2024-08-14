@@ -83,13 +83,3 @@ Find the systemd configuration in `security-txt-policy-server.service`.
 ## SSL
 
 Use a proxy that terminates SSL. E.g. [HAProxy](http://www.haproxy.org/).
-
-# Tests
-
-Run tests with pytest:
-
-```
-DATABASE_PATH=security-txt-policy-server.json pytest tests/
-```
-
-The tests must be run from the project root.
