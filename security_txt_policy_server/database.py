@@ -15,9 +15,7 @@ from security_txt_policy_server.utilities import (
 class SecurityTXTPolicyInformation:
     """Represents security.txt policy information."""
 
-    def __init__(
-        self, security_txt_policy: SecurityTXTPolicy, text: str
-    ) -> None:
+    def __init__(self, security_txt_policy: SecurityTXTPolicy, text: str) -> None:
         """Set attributes."""
         self.email_contacts = security_txt_policy.email_contacts
         self.url_contacts = security_txt_policy.url_contacts
@@ -43,9 +41,7 @@ class Database:
 
         Turns JSON objects into Python objects.
         """
-        self.security_txt_policies: Dict[
-            str, Tuple[SecurityTXTPolicy, str]
-        ] = {}
+        self.security_txt_policies: Dict[str, Tuple[SecurityTXTPolicy, str]] = {}
 
         # Load security.txt policies from file
 

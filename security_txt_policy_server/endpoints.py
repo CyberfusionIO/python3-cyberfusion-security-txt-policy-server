@@ -12,9 +12,7 @@ from security_txt_policy_server import settings
 class SecurityTXTPolicy(HTTPEndpoint):
     """security.txt policy endpoint."""
 
-    async def get(
-        self, request: Request
-    ) -> Union[PlainTextResponse, JSONResponse]:
+    async def get(self, request: Request) -> Union[PlainTextResponse, JSONResponse]:
         """Implement GET method."""
         if request.state.security_txt_policy_error:
             return JSONResponse(
