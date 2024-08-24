@@ -37,8 +37,10 @@ class InjectSecurityTXTPolicyMiddleware(BaseHTTPMiddleware):
 
         if parsed_domain:
             try:
-                request.state.security_txt_policy_information = request.app.state.database.get_security_txt_policy_information(
-                    parsed_domain
+                request.state.security_txt_policy_information = (
+                    request.app.state.database.get_security_txt_policy_information(
+                        parsed_domain
+                    )
                 )
 
                 request.state.security_txt_policy_error = None

@@ -49,9 +49,7 @@ class SecurityTXTPolicy:
         for acknowledgment_url in self.acknowledgment_urls:
             lines.append(f"Acknowledgments: {acknowledgment_url}")
 
-        lines.append(
-            f"Preferred-Languages: {', '.join(self.preferred_languages)}"
-        )
+        lines.append(f"Preferred-Languages: {', '.join(self.preferred_languages)}")
 
         for policy_url in self.policy_urls:
             lines.append(f"Policy: {policy_url}")

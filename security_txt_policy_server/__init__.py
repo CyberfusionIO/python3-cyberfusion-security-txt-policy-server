@@ -20,9 +20,7 @@ middleware = [
     Middleware(InjectSecurityTXTPolicyMiddleware),
     Middleware(TrustedHostMiddleware, allowed_hosts=["*"]),
 ]
-routes = [
-    Route("/.well-known/security.txt", SecurityTXTPolicy, methods=["GET"])
-]
+routes = [Route("/.well-known/security.txt", SecurityTXTPolicy, methods=["GET"])]
 
 app = Starlette(routes=routes, middleware=middleware)
 

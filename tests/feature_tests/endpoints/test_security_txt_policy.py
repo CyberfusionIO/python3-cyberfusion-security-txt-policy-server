@@ -1,4 +1,3 @@
-import pytest
 from starlette.testclient import TestClient
 
 # Error handling
@@ -19,22 +18,16 @@ def test_security_txt_policy_domain_not_exists(
 
 def test_security_txt_policy_domain_invalid(test_client: TestClient) -> None:
     """Test response when the domain is invalid."""
-    response = test_client.get(
-        "/.well-known/security.txt", headers={"Host": "123"}
-    )
+    response = test_client.get("/.well-known/security.txt", headers={"Host": "123"})
     assert response.status_code == 200
     assert response.json() == {"detail": "It seems like I'm alive."}
 
 
 def test_security_txt_policy_domain_empty(test_client: TestClient) -> None:
     """Test response when the domain is empty."""
-    response = test_client.get(
-        "/.well-known/security.txt", headers={"Host": ""}
-    )
+    response = test_client.get("/.well-known/security.txt", headers={"Host": ""})
     assert response.status_code == 400
-    assert response.json() == {
-        "detail": "Specify security.txt policy to look for."
-    }
+    assert response.json() == {"detail": "Specify security.txt policy to look for."}
 
 
 def test_security_txt_policy_domain_x_powered_by_header(
@@ -81,14 +74,8 @@ def test_security_txt_policy_url_contacts(test_client: TestClient) -> None:
         "/.well-known/security.txt",
         headers={"Host": "use-for-other-tests.com"},
     )
-    assert (
-        "Contact: https://example.com/contact1.html"
-        in response.text.splitlines()
-    )
-    assert (
-        "Contact: https://example.com/contact2.html"
-        in response.text.splitlines()
-    )
+    assert "Contact: https://example.com/contact1.html" in response.text.splitlines()
+    assert "Contact: https://example.com/contact2.html" in response.text.splitlines()
 
 
 def test_security_txt_policy_email_contacts(test_client: TestClient) -> None:
@@ -115,14 +102,8 @@ def test_security_txt_policy_encryption_key_urls(
         "/.well-known/security.txt",
         headers={"Host": "use-for-other-tests.com"},
     )
-    assert (
-        "Encryption: https://example.com/contact1.pgp"
-        in response.text.splitlines()
-    )
-    assert (
-        "Encryption: https://example.com/contact2.pgp"
-        in response.text.splitlines()
-    )
+    assert "Encryption: https://example.com/contact1.pgp" in response.text.splitlines()
+    assert "Encryption: https://example.com/contact2.pgp" in response.text.splitlines()
 
 
 def test_security_txt_policy_acknowledgments_urls(
@@ -133,12 +114,10 @@ def test_security_txt_policy_acknowledgments_urls(
         headers={"Host": "use-for-other-tests.com"},
     )
     assert (
-        "Acknowledgments: https://example.com/thanks1.txt"
-        in response.text.splitlines()
+        "Acknowledgments: https://example.com/thanks1.txt" in response.text.splitlines()
     )
     assert (
-        "Acknowledgments: https://example.com/thanks2.txt"
-        in response.text.splitlines()
+        "Acknowledgments: https://example.com/thanks2.txt" in response.text.splitlines()
     )
 
 
@@ -147,14 +126,8 @@ def test_security_txt_policy_policy_urls(test_client: TestClient) -> None:
         "/.well-known/security.txt",
         headers={"Host": "use-for-other-tests.com"},
     )
-    assert (
-        "Policy: https://example.com/security1.html"
-        in response.text.splitlines()
-    )
-    assert (
-        "Policy: https://example.com/security2.html"
-        in response.text.splitlines()
-    )
+    assert "Policy: https://example.com/security1.html" in response.text.splitlines()
+    assert "Policy: https://example.com/security2.html" in response.text.splitlines()
 
 
 def test_security_txt_policy_opening_urls(test_client: TestClient) -> None:
@@ -162,12 +135,8 @@ def test_security_txt_policy_opening_urls(test_client: TestClient) -> None:
         "/.well-known/security.txt",
         headers={"Host": "use-for-other-tests.com"},
     )
-    assert (
-        "Hiring: https://example.com/jobs1.html" in response.text.splitlines()
-    )
-    assert (
-        "Hiring: https://example.com/jobs2.html" in response.text.splitlines()
-    )
+    assert "Hiring: https://example.com/jobs1.html" in response.text.splitlines()
+    assert "Hiring: https://example.com/jobs2.html" in response.text.splitlines()
 
 
 def test_security_txt_policy_preferred_languages_urls(
