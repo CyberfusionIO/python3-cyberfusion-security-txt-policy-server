@@ -6,7 +6,7 @@ from starlette.endpoints import HTTPEndpoint
 from starlette.requests import Request
 from starlette.responses import JSONResponse, PlainTextResponse
 
-from security_txt_policy_server import settings
+from cyberfusion.SecurityTXTPolicyServer import settings
 
 
 class SecurityTXTPolicy(HTTPEndpoint):

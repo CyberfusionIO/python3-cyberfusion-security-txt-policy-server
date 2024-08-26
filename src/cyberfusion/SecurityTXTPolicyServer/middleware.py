@@ -6,11 +6,11 @@ from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.requests import Request
 from starlette.responses import Response
 
-from security_txt_policy_server.exceptions.database import DatabaseError
-from security_txt_policy_server.exceptions.http_host_header import (
+from cyberfusion.SecurityTXTPolicyServer.exceptions.database import DatabaseError
+from cyberfusion.SecurityTXTPolicyServer.exceptions.http_host_header import (
     HTTPHostHeaderError,
 )
-from security_txt_policy_server.utilities import parse_host_header
+from cyberfusion.SecurityTXTPolicyServer.utilities import parse_host_header
 
 
 class InjectSecurityTXTPolicyMiddleware(BaseHTTPMiddleware):

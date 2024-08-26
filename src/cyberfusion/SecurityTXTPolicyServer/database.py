@@ -3,9 +3,9 @@
 import json
 from typing import Dict, Optional, Tuple
 
-from security_txt_policy_server import settings
-from security_txt_policy_server.exceptions.database import DomainNotExistsError
-from security_txt_policy_server.utilities import (
+from cyberfusion.SecurityTXTPolicyServer import settings
+from cyberfusion.SecurityTXTPolicyServer.exceptions.database import DomainNotExistsError
+from cyberfusion.SecurityTXTPolicyServer.utilities import (
     CHAR_LABEL,
     SecurityTXTPolicy,
     get_domain_is_wildcard,

@@ -5,9 +5,9 @@ from starlette.middleware import Middleware
 from starlette.middleware.trustedhost import TrustedHostMiddleware
 from starlette.routing import Route
 
-from security_txt_policy_server.database import Database
-from security_txt_policy_server.endpoints import SecurityTXTPolicy
-from security_txt_policy_server.middleware import (
+from cyberfusion.SecurityTXTPolicyServer.database import Database
+from cyberfusion.SecurityTXTPolicyServer.endpoints import SecurityTXTPolicy
+from cyberfusion.SecurityTXTPolicyServer.middleware import (
     InjectSecurityTXTPolicyMiddleware,
 )
 
