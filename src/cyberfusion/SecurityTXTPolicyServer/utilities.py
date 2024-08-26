@@ -6,7 +6,7 @@ from typing import List, Optional
 
 import validators
 
-from security_txt_policy_server.exceptions.http_host_header import (
+from cyberfusion.SecurityTXTPolicyServer.exceptions.http_host_header import (
     HTTPHostHeaderDomainEmptyError,
     HTTPHostHeaderDomainInvalidError,
 )

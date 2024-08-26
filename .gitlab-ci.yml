@@ -17,7 +17,7 @@ unit test and feature test:
   script:
     - pip install --no-cache-dir -r requirements/test.txt
     - pip install .
-    - DATABASE_PATH=security-txt-policy-server.json pytest -n 10 -vvv --cov-branch --cov=security_txt_policy_server --cov-config=.coveragerc --cov-fail-under=95 --junitxml=report-pytest.xml
+    - DATABASE_PATH=security-txt-policy-server.json pytest -n 10 -vvv --cov-branch --cov=cyberfusion.SecurityTXTPolicyServer --cov-config=.coveragerc --cov-fail-under=95 --junitxml=report-pytest.xml
   artifacts:
     reports:
       junit: report-*.xml

@@ -2,7 +2,8 @@
 
 import uvicorn
 
-from security_txt_policy_server import app, settings
+from cyberfusion.SecurityTXTPolicyServer import app
+from cyberfusion.SecurityTXTPolicyServer import settings
 
 
 def main() -> None:
