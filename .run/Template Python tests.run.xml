@@ -1,13 +1,13 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="true" type="tests" factoryName="py.test">
-    <module name="security-txt-policy-server" />
+    <module name="python3-cyberfusion-security-txt-policy-server" />
     <option name="INTERPRETER_OPTIONS" value="" />
     <option name="PARENT_ENVS" value="true" />
     <envs>
-      <env name="DATABASE_PATH" value="security-txt-policy-server.json" />
+      <env name="DATABASE_PATH" value="tests/security-txt-policy-server.json" />
     </envs>
     <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
-    <option name="SDK_NAME" value="Python 3.11 (security-txt-policy-server)" />
+    <option name="SDK_NAME" value="Python 3.11 (python3-cyberfusion-security-txt-policy-server)" />
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     <option name="IS_MODULE_SDK" value="false" />
     <option name="ADD_CONTENT_ROOTS" value="true" />
