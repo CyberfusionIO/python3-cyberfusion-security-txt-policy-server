@@ -1,0 +1,22 @@
+#!/bin/sh
+
+set -e
+
+#DEBHELPER#
+
+if [ "$1" = "configure" ]; then
+    CONFIG_FILE_PATH=/var/lib/security-txt-policy-server.json
+
+    if [ ! -f $CONFIG_FILE_PATH ]; then
+	echo "security-txt-policy-server: config does not exist, creating..."
+
+        echo '{"security_txt_policies": []}' > $CONFIG_FILE_PATH
+    else
+        echo "security-txt-policy-server: config already exists, not creating"
+    fi
+
+    chown security-txt-policy-server: $CONFIG_FILE_PATH
+    chmod 0600 $CONFIG_FILE_PATH
+fi
+
+exit 0
