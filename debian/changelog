@@ -1,3 +1,9 @@
+python3-cyberfusion-security-txt-policy-server (1.0.5.1) unstable; urgency=low
+
+  - Fix apt upload
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Tue, 27 Aug 2024 18:06:00 +0200
+
 python3-cyberfusion-security-txt-policy-server (1.0.5) unstable; urgency=low
 
   - Build Debian package
