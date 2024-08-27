@@ -1,4 +1,4 @@
-# security-txt-policy-server
+# python3-cyberfusion-security-txt-policy-server
 
 security-txt-policy-server serves `.well-known/security.txt` files.
 
@@ -9,8 +9,15 @@ security-txt-policy-server serves `.well-known/security.txt` files.
 Run the following command to install the package from PyPI:
 
 ```
-pip3 install security-txt-policy-server
+pip3 install python3-cyberfusion-security-txt-policy-server
 ```
+
+## Debian
+
+Run the following commands to build a Debian package:
+
+    mk-build-deps -i -t 'apt -o Debug::pkgProblemResolver=yes --no-install-recommends -y'
+    dpkg-buildpackage -us -uc
 
 # Configure
 
@@ -62,15 +69,13 @@ Find information about these properties on https://securitytxt.org/.
 
 # Usage
 
-## Start
+## Manually
 
-Start security-txt-policy-server manually with:
+    bin/security-txt-policy-server
 
-```
-bin/security-txt-policy-server
-```
+### systemd
 
-Find the systemd configuration in `security-txt-policy-server.service`.
+    systemctl start security-txt-policy-server.service
 
 ## SSL
 

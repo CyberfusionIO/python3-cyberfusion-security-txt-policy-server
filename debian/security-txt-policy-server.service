@@ -1,0 +1,15 @@
+[Unit]
+Description=security-txt-policy-server
+After=network.target
+
+[Service]
+User=security-txt-policy-server
+Group=security-txt-policy-server
+ExecStart=/usr/bin/security-txt-policy-server
+PrivateTmp=true
+KillMode=mixed
+
+Environment=DATABASE_PATH=/var/lib/security-txt-policy-server.json
+
+[Install]
+WantedBy=multi-user.target
